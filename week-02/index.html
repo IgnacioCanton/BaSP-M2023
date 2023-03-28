@@ -5,36 +5,61 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MegaRocket</title>
-        <!--agregar favicon-->
+        <link rel="shortcut icon" href="../week-02/assets/images/favicon.ico">
         <!--falta agregar todas las imagenes-->
     </head>
     <body>
         <header>
-            <img src="" alt="hamburger icon">
-            <h1>MegaRocket</h1>
+            <img src="../week-02/assets/images/hamIcon.png" alt="hamburger icon">
+            <h1>
+                <img src="../week-02/assets/images/megarocketlogo.png" alt="MegaRocket">
+            </h1>
         </header>
-        <!--Preguntar si este section llevaria 1 indentado más-->
-        <section>
-            <h4>Menu</h4>
-            <button>Home</button>
-            <button>Sign up</button>
-            <button>Log in</button>
-            <button>Info</button>
-            <p>Contact us</p>
+        <section id="ham menu section">
+            <h4>
+                Menu
+            </h4>
             <ul>
-                <img src="" alt="mail img">
-                <li>information@untitled.tld</li>
-                <img src="" alt="phone img">
-                <li>(000) 000-0000</li>
-                <img src="" alt="location img">
-                <li>1234 Somewhere road #8254Nashville, TN 00000-0000</li>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Sign up</a>
+                </li>
+                <li>
+                    <a href="">Log in</a>
+                </li>
+                <li>
+                    <a href="">Info</a>
+                </li>
+                <div>
+                    <li>
+                        <a href="">Contact us</a>
+                    </li>
+                    <img src="../week-02/assets/images/mail.png" alt="mail img">
+                    <li>
+                        information@untitled.tld
+                    </li>
+                    <img src="../week-02/assets/images/phone.png" alt="phone img">
+                    <li>
+                        (000) 000-0000
+                    </li>
+                    <img src="../week-02/assets/images/address.png" alt="location img">
+                    <li>
+                        1234 Somewhere road #8254Nashville, TN 00000-0000
+                    </li>
+                </div>
             </ul>            
         </section>
         <main>
-            <section>
-                <h2>Get fit, get strong.</h2>
-                <h3>Your ultimate gym experience starts here!</h3>
-                <img src="" alt="bodybuiler img">
+            <section id="intro text">
+                <h2>
+                    Get fit, get strong.
+                </h2>
+                <h3>
+                    Your ultimate gym experience starts here!
+                </h3>
+                <img src="../week-02/assets/images/weightlifter.png" alt="weightlifter img">
                 <p>
                     Welcome to our gym landing page! We offer a wide range of fitness classes and 
                     state-of-the-art equipment to help you reach your fitness goals. Our expert trainers 
@@ -42,34 +67,42 @@
                     journey to a healthier, stronger you!
                 </p>
             </section>
-            <section>
+            <section id="options section">
                 <div>
-                    <img src="" alt="calendar img">
-                    <h3><a href="">Make an appointment</a></h3>
+                    <img src="../week-02/assets/images/calendar.png" alt="calendar img">
+                    <h3>
+                        <a href="">Make an appointment</a>
+                    </h3>
                     <p>
                         Choose the membership plan that fits your lifestyle and fitness goals. 
                         From basic to premium, we have options for every budget and level of commitment.
                     </p>
                 </div>
                 <div>
-                    <img src="" alt="credential img">
-                    <h3><a href="">Our memberships</a></h3>
+                    <img src="../week-02/assets/images/credential.png" alt="credential img">
+                    <h3>
+                        <a href="">Our memberships</a>
+                    </h3>
                     <p>
                         Choose the membership plan that fits your lifestyle and fitness goals. 
                         From basic to premium, we have options for every budget and level of commitment.
                     </p>
                 </div>
                 <div>
-                    <img src="" alt="people img">
-                    <h3><a href="">Become a member</a></h3>
+                    <img src="../week-02/assets/images/people.png" alt="people img">
+                    <h3>
+                        <a href="">Become a member</a>
+                    </h3>
                     <p>
                         Join our fitness community and take advantage of all the perks of being a member.
                         We offer a range of benefits to help you reach your fitness potential.
                     </p>
                 </div>
                 <div>
-                    <img src="" alt="text img">
-                    <h3><a href="">Suggestions</a></h3>
+                    <img src="../week-02/assets/images/message.png" alt="text img">
+                    <h3>
+                        <a href="">Suggestions</a>
+                    </h3>
                     <p>
                         We're always looking for ways to improve our gym experience. Have a suggestion? 
                         We want to hear from you! Share your feedback with us and help us make our gym the
@@ -77,75 +110,129 @@
                     </p>
                 </div>
             </section>
-            <section>
-                <h2>You have questions, ask away and get your answers</h2>
+            <section id="form section">
+                <h2>
+                    You have questions, ask away and get your answers
+                </h2>
                 <form action="#" method="post">
-                    <input type="text" name="name" id="name" placeholder="Name" required >
-                    <input type="text" name="surname" id="surname" placeholder="Surname" required >
-                    <input type="text" name="email" id="email" placeholder="E-mail address" required >
-                    <input type="text" name="name" id="text" placeholder="Text" required >
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="text" name="surname" id="surname" placeholder="Surname" required>
+                    <input type="text" name="email" id="email" placeholder="E-mail address" required>
+                    <input type="text" name="name" id="text" placeholder="Text" required>
                     <select id="motive" name="motive" required>
-                        <option value="" disabled selected>Select a motive</option>
-                        <option value="Complaint">Complaint</option>
-                        <option value="Comment">Comment</option>
-                        <option value="Suggestion">Suggestion</option>
+                        <option value="" disabled selected>
+                            Select a motive
+                        </option>
+                        <option value="Complaint">
+                            Complaint
+                        </option>
+                        <option value="Comment">
+                            Comment
+                        </option>
+                        <option value="Suggestion">
+                            Suggestion
+                        </option>
                     </select>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message...">
                     </textarea>
-                    <button type="reset">Clear</button>
-                    <button type="submit">Submit</button>
+                    <button type="reset">
+                        Clear
+                    </button>
+                    <button type="submit">
+                        Submit
+                    </button>
                 </form>
             </section>
-            <section>
-                <h2>Our history</h2>
+            <article id="history section">
+                <h2>
+                    Our history
+                </h2>
                 <p>
                     Our journey began with a passion for fitness and a desire to create a community
                      where individuals could come together to achieve their health and wellness goals. 
                      We wanted to build a gym that was more t....
                 </p>
-            </section>
-            <section>
+            </article>
+            <section id="activity list section">
                 <div>
-                    <h3>Our activities</h3>
+                    <h3>
+                        Our activities
+                    </h3>
                     <ol>
-                        <li>Crossfit</li>
-                        <li>Spinning</li>
-                        <li>Functional</li>
-                        <li>Boxing</li>
-                        <li>Weightlifting</li>
+                        <li>
+                            Crossfit
+                        </li>
+                        <li>
+                            Spinning
+                        </li>
+                        <li>
+                            Functional
+                        </li>
+                        <li>
+                            Boxing
+                        </li>
+                        <li>
+                            Weightlifting
+                        </li>
                     </ol>
                 </div>
                 <div>
-                    <h3>Black membership</h3>
+                    <h3>
+                        Black membership
+                    </h3>
                     <ul>
-                        <li>Free access to BB class</li>
-                        <li>Free access to classes without making appointment</li>
-                        <li>Personalized follow up with personal trainer</li>
-                        <li>Grid display</li>
+                        <li>
+                            Free access to BB class
+                        </li>
+                        <li>
+                            Free access to classes without making appointment
+                        </li>
+                        <li>
+                            ersonalized follow up with personal trainer
+                        </li>
+                        <li>
+                            Grid display
+                        </li>
                     </ul>
                 </div>
                 <div>
-                    <h3>Classic membership</h3>
+                    <h3>
+                        Classic membership
+                    </h3>
                     <ul>
-                        <li>Free pass to weights room</li>
-                        <li>Monitored by a personal coach</li>
-                        <li>Displayed schedule</li>
+                        <li>
+                            Free pass to weights room
+                        </li>
+                        <li>
+                            Monitored by a personal coach
+                        </li>
+                        <li>
+                            Displayed schedule
+                        </li>
                     </ul>
                 </div>
                 <div>
-                    <h3>Only classes membership</h3>
+                    <h3>
+                        Only classes membership
+                    </h3>
                     <ul>
-                        <li>Free pass to classes with prior appointment</li>
-                        <li>Display schedule</li>
+                        <li>
+                            Free pass to classes with prior appointment
+                        </li>
+                        <li>
+                            Display schedule
+                        </li>
                     </ul>
                 </div>
             </section>
         </main>
         <footer>
-            <h3>Copyright © 2023 MegaRocket SA. All rights reserved.</h3>
-            <img src="" alt="linkedin logo">
-            <img src="" alt="facebook logo">
-            <img src="" alt="instagram logo">
+            <h3>
+                Copyright © 2023 MegaRocket SA. All rights reserved.
+            </h3>
+            <img src="../week-02/assets/images/linkedin.png" alt="linkedin logo">
+            <img src="../week-02/assets/images/facebook.png" alt="facebook logo">
+            <img src="../week-02/assets/images/instagram.png" alt="instagram logo">
         </footer> 
     </body>
 </html>
