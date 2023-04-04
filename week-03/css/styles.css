@@ -374,4 +374,76 @@ a:visited {
     line-height: 35px;
     color: #FFF;
 }
+.form-class {
+    width: 1512px;
+    height: 515px;
+    background-color: #35365c;
+}
+.form-class h2 {
+    width: 1379px;
+    height: 70px;
+    padding-left: 80px;
+    padding-top: 42px;
+
+    font-family: "Roboto";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    text-align: center;
+    color: #FFF;
+}
+.form-class input, select {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 392px;
+    padding: 10px 12px;
+    margin-left: 119px;
+    margin-top: 25px;
+    border-radius: 10px;
+
+}
+.form-class div {
+    width: 400px;
+    height: 270px;
+}
+.form-class textarea {
+    display: inline-block;
+    margin-left: 900px;
+}
+.form-class button {
+    display: inline-block;
+    margin-left: 900px;
+}
+.our-history {
+    width: 1512px;
+    height: 364px;
+    background-color: #AACE9B;
+}
+.our-history h2 {
+    width: 318px;
+    height: 59px;
+    padding-left: 48px;
+    padding-top: 19px;
+
+    font-family: "Roboto";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 49px;
+    color: #FFF;
+}
+.our-history p {
+    width: 1369px;
+    height: 236px;
+    padding-left: 76px;
+    padding-top: 20px;
+    font-family: "Roboto";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 59px;
+    color: #FFF;
+}
 
