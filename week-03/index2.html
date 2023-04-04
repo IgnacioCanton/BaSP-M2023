@@ -6,68 +6,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MegaRocket</title>
         <link rel="shortcut icon" href="../week-02/assets/images/favicon.ico">
-        <link rel="stylesheet" href="../week-03/css/reset.css">
-        <link rel="stylesheet" href="../week-03/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="../week-03/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../week-03/css/styles.css">
 
     </head>
     <body>
-        <header>
-            <img src="../week-02/assets/images/hamIcon.png" alt="hamburger-icon">
+        <header>   
             <h1>
-                <img src="../week-02/assets/images/megarocketlogo.png" alt="MegaRocket">
+                <img class="megarocket-class"src="../week-02/assets/images/megarocketlogo.png" alt="MegaRocket">
             </h1>
+            <img class="ham-icon-class"src="../week-02/assets/images/hamIcon.png" alt="hamburger-icon">
         </header>
-        <section id="ham-menu-section">
+        <section id="ham-menu-section" class="ham-menu-section">
             <h4>
                 Menu
             </h4>
             <ul>
-                <li>
+                <li class="menu-opt">
                     <a href="">Home</a>
                 </li>
-                <li>
+                <li class="menu-opt">
                     <a href="">Sign up</a>
                 </li>
-                <li>
+                <li class="menu-opt">
                     <a href="">Log in</a>
                 </li>
-                <li>
+                <li class="menu-opt">
                     <a href="">Info</a>
                 </li>
                 
-                <li>
+                <li class="contact-us-class">
                     <a href="">Contact us</a>
+                    <ul>
+                        <img src="../week-02/assets/images/mail.png" alt="mail-img" class="img-mail">
+                        <li class="contact-text">
+                            information@untitled.tld
+                        </li>
+                        <img src="../week-02/assets/images/phone.png" alt="phone-img" class="img-phone">
+                        <li class="contact-text2">
+                            (000) 000-0000
+                        </li>
+                        <img src="../week-02/assets/images/address.png" alt="location-img" class="location-img">
+                        <li class="contact-text3">
+                            1234 Somewhere road #8254Nashville, TN 00000-0000
+                        </li>
+                    </ul>
                 </li>
-                <ul>
-                    <img src="../week-02/assets/images/mail.png" alt="mail-img">
-                    <li>
-                        information@untitled.tld
-                    </li>
-                    <img src="../week-02/assets/images/phone.png" alt="phone-img">
-                    <li>
-                        (000) 000-0000
-                    </li>
-                    <img src="../week-02/assets/images/address.png" alt="location-img">
-                    <li>
-                        1234 Somewhere road #8254Nashville, TN 00000-0000
-                    </li>
-                </ul>
+                
             </ul>            
         </section>
         <main>
-            <section id="intro-text">
+            <section id="intro-text" class="intro-class">
                 <h2>
-                    Get fit, get strong.
+                    Get fit, get strong
                 </h2>
                 <h3>
                     Your ultimate gym experience starts here!
                 </h3>
-                <img src="../week-02/assets/images/weightlifter.png" alt="weightlifter-img">
+                <img src="../week-02/assets/images/weightlifter.png" alt="weightlifter-img" class="intro-img">
                 <p>
                     Welcome to our gym landing page! We offer a wide range of fitness classes and 
-                    state-of-the-art equipment to help you reach your fitness goals. Our expert trainers 
-                    are here to guide and motivate you every step of the way. Join us today and start your 
-                    journey to a healthier, stronger you!
+                    state-of-the-art equipment to help you reach your fitness goals.
+
+                    Our expert trainers are here to guide and motivate you every step of the way. 
+                    
+                    Join us today and start your journey to a healthier, stronger you!
                 </p>
             </section>
             <section id="options-section">
@@ -119,7 +122,7 @@
                 </h2>
                 <form action="#" method="post">
                     <input type="text" name="name" id="name" placeholder="Name" required>
-                    <input type="text" name="surname" id="surname" placeholder="Surname" required>
+                    <!-- cambiarlos por button--><input type="text" name="surname" id="surname" placeholder="Surname" required>
                     <input type="text" name="email" id="email" placeholder="E-mail address" required>
                     <input type="text" name="name" id="text" placeholder="Text" required>
                     <select id="motive" name="motive" required>
