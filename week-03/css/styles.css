@@ -5,6 +5,30 @@ header {
 body {
     width: 1512px;
 }
+footer {
+    height: 133px;
+    background: #AACE9B;
+}
+footer h3 {
+    display: inline-block;
+    width: 765px;
+    height: 38px;
+    padding-left: 45px;
+    padding-top: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+footer img {
+    float: right;
+    width: 71px;
+    height: 71px;
+    padding-right: 103px;
+    padding-top: 31px;
+}
 a:visited {
     color:#FFF
 }
