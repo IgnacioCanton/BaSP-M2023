@@ -446,4 +446,35 @@ a:visited {
     line-height: 59px;
     color: #FFF;
 }
+.activity-class {
+    width: 1512px;
+    height: 360px;
+    background-color: #D9D9D9;
+}
+.activity-box {
+    float: left;
+    width: 200px;
+    height: 100px;
+    padding-left: 150px;
+    padding-top: 60px;
+}
+.activity-box h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    border: 1px solid black;
+    color: #373867;
+}
+.activity-box li {
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    list-style: circle;
 
+    color: #000000;
+}
