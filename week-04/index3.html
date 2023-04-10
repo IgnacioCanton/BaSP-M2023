@@ -98,12 +98,12 @@
                     </h3>
                 </div>
             </section>
-            <section id="form-section">
+            <section id="form-section" class="form-class">
                 <h2>
                     You have questions, ask away and get your answers
                 </h2>
                 <form action="#" method="post">
-                    <div>
+                    <div class="form-class">
                         <input type="text" name="name" id="name"  placeholder="Name" required>
                         <input type="text" name="surname" id="surname"  placeholder="Surname" required>
                         <input type="text" name="email" id="email"  placeholder="E-mail address" required>
@@ -122,17 +122,21 @@
                                 Suggestion
                             </option>
                         </select>
+                        <textarea name="message" id="message" placeholder="Your message..."></textarea>
                     </div>
-                    <textarea name="message" id="message" placeholder="Your message..."></textarea>
-                    <button type="reset">
-                        Clear
-                    </button>
-                    <button type="submit">
-                        Submit
-                    </button>
+                    <div class="button-container">
+                        <button type="reset">
+                            <img src="../assets/images/cerrar.png" alt="icono de cerrar">
+                            Clear
+                        </button>
+                        <button type="submit">
+                            <img src="../assets/images/correo-electronico-vacio.png" alt="Send button">
+                            Send
+                        </button>
+                    </div>
                 </form>
             </section>
-            <article id="history-section">
+            <article id="history-section" class="history-class">
                 <h2>
                     Our history
                 </h2>
