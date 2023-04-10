@@ -1,11 +1,37 @@
+/* global */
+
 body {
     width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
 }
 a:visited {
     color: #FFFFFF;
     text-decoration: none;
 }
-/*header styles*/
+/* footer */
+
+footer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #AACE9B;
+}
+footer h3 {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+footer div img{
+    justify-content: space-between;
+    padding: 2%;
+    width: 30px;
+    height: 30px;
+}
+
+/* header styles */
 
 header {
     height: 60px;
@@ -24,11 +50,13 @@ header h1 img {
     height: 20.1px;
     padding-left: 10px;
 }
+
 /* ham menu class */
 
 .menu-section-class {
     display: none;
 }
+
 /* intro section */
 
 .intro-class {
@@ -81,6 +109,7 @@ header h1 img {
     padding-left: 18%;
     padding-right: 18%;
 }
+
 /* options section */
 
 .options-class {
@@ -160,7 +189,9 @@ header h1 img {
     border: 3px solid #000000;
     border-radius: 25px;
 }
-/* Our history section */
+
+/* our history section */
+
 .history-class {
     display: flex;
     flex-direction: column;
@@ -182,6 +213,45 @@ header h1 img {
     padding: 5% 5% 8% 5%;
     text-align: justify;
 }
+
+/* activities section */
+
+.activities-class {
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    text-align: center;
+    padding: 10% 15%;
+    color: #000000;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+.activities-class div {
+    padding-bottom: 15px;
+}
+.activities-class h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    padding-bottom: 25px;
+}
+.activities-class ol {
+    text-align: start;
+    list-style-type: decimal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+.activities-class ul {
+    text-align: start;
+    list-style-type: disc;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+
+
 
 
 
