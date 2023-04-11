@@ -75,7 +75,6 @@ header h1 img {
     font-weight: 800;
     font-size: 40px;
     line-height: 50px;
-    text-align: center;
     text-transform: uppercase;
     color: #000000;
 }
@@ -88,7 +87,6 @@ header h1 img {
     font-weight: 600;
     font-size: 30px;
     line-height: 35px;
-    text-align: center;
 
     color: #000000;
 }
@@ -250,6 +248,53 @@ header h1 img {
     line-height: 18px;
 }
 
+/* media query para tablet */
+
+@media (min-width: 600px) {
+
+    /* header styles */
+
+    header {
+        height: 169px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    /* intro section */
+
+    .intro-class {
+        text-align: left;
+    }
+    .intro-class h2, h3 {
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .intro-class div {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        padding: 13px 23px;
+    }
+    .intro-class p {
+        white-space: pre-line;
+        padding-left: 0%;
+        padding-right: 0%;
+        width: 70%;
+        height: 70%;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20.7076px;
+        line-height: 30px;
+    }
+    .intro-class img {
+        width: 30%;
+        height: 30%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
 
 
 
