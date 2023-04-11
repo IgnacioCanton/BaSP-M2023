@@ -379,7 +379,38 @@ header h1 img {
     }
     .menu-section-class ul li{
         width: 270px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         background-color: #51A884;
     }
-
+    .menu-section-class ul > li{
+        border: 1px solid black;
+        margin-top: 25px;
+    }
+    .menu-section-class a {
+        font-size: 28px;
+        font-style: normal;
+        font-family: "Roboto";
+        font-weight: 350;
+        line-height: 38px;
+        color: #FFF;
+        text-decoration: none;
+    }
+    .contact-us div {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-us img {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .contact-us li {
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 20px;
+        list-style: disc;
+        color:white;
+    }
 }
