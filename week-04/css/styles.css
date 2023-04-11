@@ -155,9 +155,7 @@ header h1 img {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    text-align: center;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
 .form-class input, select, textarea {
@@ -299,43 +297,57 @@ header h1 img {
     }
 
     /* Options section */
-    
     .options-class {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+        width: 100%;
         flex-direction: row;
+        flex-wrap: wrap;
     }
-    .options-class div {
+    .options-class  div {
         width: 40%;
         height: 40%;
+        padding: 0;
+        margin: 5%;
+    }
+    .inside-option {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .inside-option img {
+        width: 90px;
+        height: 90px;
+    }
+    .inside-option h3 {
+        width: 264px;
+        height: 64px; /* no pude hacer que midan todos esto */
+        white-space: nowrap;
+        font-weight: 600;
+        font-size: 20px;
     }
     .options-class p {
-        display: block;
-    }
-    .img-container {
         display: flex;
-        flex: row;
-    }
-    .img-container img {
-        width: 80px;
-        height: 80px;
-    }
-    .img-container h3 {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 26px;
+        flex-direction: column;
+        text-align: left; 
+        padding-left: 20px;  
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 200%;
         color: #FFFFFF;
-        border: 0;
-    }
-    .img-container a {
+     }
+
+     /* form section */
+     .form-class {
+         align-items: center;
+     }
+    form {
         display: flex;
-        white-space: nowrap;
+        flex-direction: column;
+        width: 312px;
+    }
+    form input, select, textarea {
+        width: 100%;
     }
 }
