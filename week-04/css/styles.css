@@ -252,6 +252,20 @@ header h1 img {
 
 @media (min-width: 600px) {
 
+    /* form section */
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 312px;
+    }
+    .form-class {
+        align-items: center;
+    }
+    form input, select, textarea {
+       width: 100%;
+    }
+
     /* header styles */
 
     header {
@@ -297,6 +311,7 @@ header h1 img {
     }
 
     /* Options section */
+
     .options-class {
         width: 100%;
         flex-direction: row;
@@ -337,17 +352,34 @@ header h1 img {
         line-height: 200%;
         color: #FFFFFF;
      }
+}
+@media (min-width: 1024px) {
+    
+    main, header, footer {
+        margin-left: 300px;
+    }
 
-     /* form section */
-     .form-class {
-         align-items: center;
-     }
-    form {
+    /* ham menu */
+
+    .menu-section-class {
         display: flex;
         flex-direction: column;
-        width: 312px;
+        position: fixed;
+        align-items: center;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background: #E5F2ED;
+        padding-top: 50px;
     }
-    form input, select, textarea {
-        width: 100%;
+    .menu-section-class h4 {
+        font-size: 20px;
     }
+    .menu-section-class ul li{
+        width: 270px;
+        background-color: #51A884;
+    }
+
 }
