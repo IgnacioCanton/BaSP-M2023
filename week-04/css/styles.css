@@ -264,6 +264,7 @@ header h1 img {
     }
     form input, select, textarea {
        width: 100%;
+
     }
 
     /* header styles */
@@ -355,6 +356,8 @@ header h1 img {
 }
 @media (min-width: 1024px) {
     
+    /* golbal */ 
+
     main, header, footer {
         margin-left: 300px;
     }
@@ -413,4 +416,42 @@ header h1 img {
         list-style: disc;
         color:white;
     }
+
+    /* intro section */
+
+    .intro-class p {
+        word-wrap: break-word;
+    }
+
+    /* options section */
+
+    .options-class p {
+        line-height: 100%;
+    }
+    
+    /* our history section */
+
+    .history-class h2 {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 59px;
+        text-align: left;
+        margin-left: 7%;
+        margin-top: 7%;
+
+    }
+    .history-class p {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 50px;
+        padding-left: 0;
+        margin-left: 12%;
+        text-align: justify;
+    }
+
+   
+
+
+
+
 }
