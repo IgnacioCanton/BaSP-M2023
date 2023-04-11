@@ -449,6 +449,50 @@ header h1 img {
         text-align: justify;
     }
 
+    /* activities section */
+    
+    .activities-class {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+    }
+    .activities-class div {
+        padding: 0;
+        width: 40%;
+        height: 40%;
+        margin: 5%;
+    }
+    .activities-class h3 {
+        width: auto;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .activities-class ol {
+        text-align: center;
+        width: fit-content;
+        margin-left: 10%;
+        margin-top: 25px;
+    }
+    .activities-class ul {
+        text-align: left;
+        list-style-type: disc;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        margin-top: 25px;
+        margin-left: 10%;
+    }
+
+
    
 
 
