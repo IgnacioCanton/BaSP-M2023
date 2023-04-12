@@ -356,7 +356,7 @@ header h1 img {
 }
 @media (min-width: 1024px) {
     
-    /* golbal */ 
+    /* global */ 
 
     main, header, footer {
         margin-left: 300px;
@@ -375,15 +375,15 @@ header h1 img {
         width: 300px;
         height: 100%;
         background: #E5F2ED;
-        padding-top: 50px;
+        padding-top: 30px;
     }
     .menu-section-class h4 {
         font-size: 20px;
     }
     .menu-section-class ul li{
         width: 270px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         background-color: #51A884;
     }
     .menu-section-class ul > li{
@@ -491,11 +491,4 @@ header h1 img {
         margin-top: 25px;
         margin-left: 10%;
     }
-
-
-   
-
-
-
-
 }
