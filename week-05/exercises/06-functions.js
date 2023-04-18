@@ -65,11 +65,11 @@ function lastSum (a,b)
     {
         if (validateInteger(a)!=true) 
         {
-            alert ('error ' + a.toFixed(0));
+            alert ('error ' + Math.round(a));
         }
         if (validateInteger(b)!=true)
         {
-            alert ('error ' + b.toFixed(0));
+            alert ('error ' + Math.round(b));
         }
         return Math.round(a) + Math.round(b);
     }
