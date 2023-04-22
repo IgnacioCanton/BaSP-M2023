@@ -1,62 +1,3 @@
-/* global */
-
-body {
-  width: 100%;
-  font-family: "Roboto";
-  font-style: normal;
-}
-a:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-/* footer */
-
-footer {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  background-color: #aace9b;
-}
-footer h3 {
-  margin-top: 12px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #000000;
-}
-footer div img {
-  justify-content: space-between;
-  padding: 2%;
-  width: 30px;
-  height: 30px;
-}
-
-/* header styles */
-
-header {
-  height: 60px;
-  background-color: #35365c;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header h1 img {
-  width: 206px;
-  height: 42px;
-  padding-right: 10px;
-}
-.ham-icon-class {
-  width: 29.33px;
-  height: 20.1px;
-  padding-left: 10px;
-}
-
-/* ham menu class */
-
-.menu-section-class {
-  display: none;
-}
-
 /* intro section */
 
 .intro-class {
@@ -251,8 +192,6 @@ textarea {
   line-height: 18px;
 }
 
-/* media query para tablet */
-
 @media (min-width: 600px) {
   /* form section */
 
@@ -269,15 +208,6 @@ textarea {
   textarea {
     width: 100%;
   }
-
-  /* header styles */
-
-  header {
-    height: 169px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
   /* intro section */
 
   .intro-class {
@@ -358,84 +288,17 @@ textarea {
     color: #ffffff;
   }
 }
+
 @media (min-width: 1024px) {
-  /* global */
-
-  main,
-  header,
-  footer {
-    margin-left: 300px;
-  }
-
-  /* ham menu */
-
-  .menu-section-class {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    align-items: center;
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    background: #e5f2ed;
-    padding-top: 30px;
-  }
-  .menu-section-class h4 {
-    font-size: 20px;
-  }
-  .menu-section-class ul li {
-    width: 270px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #51a884;
-  }
-  .menu-section-class ul > li {
-    border: 1px solid black;
-    margin-top: 25px;
-  }
-  .menu-section-class a {
-    font-size: 28px;
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 350;
-    line-height: 38px;
-    color: #fff;
-    text-decoration: none;
-  }
-  .contact-us div {
-    display: flex;
-    flex-direction: row;
-  }
-  .contact-us img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-    margin-top: 30px;
-  }
-  .contact-us li {
-    margin-top: 30px;
-    margin-left: 30px;
-    font-size: 20px;
-    list-style: disc;
-    color: white;
-  }
-
   /* intro section */
-
   .intro-class p {
     word-wrap: break-word;
   }
-
   /* options section */
-
   .options-class p {
     line-height: 100%;
   }
-
   /* our history section */
-
   .history-class h2 {
     font-weight: 600;
     font-size: 50px;
@@ -452,9 +315,7 @@ textarea {
     margin-left: 12%;
     text-align: justify;
   }
-
   /* activities section */
-
   .activities-class {
     flex-direction: row;
     flex-wrap: wrap;

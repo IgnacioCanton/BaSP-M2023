@@ -1,0 +1,7 @@
+@media (min-width: 1024px) {
+    main,
+    header,
+    footer {
+      margin-left: 0px;
+    }
+}
