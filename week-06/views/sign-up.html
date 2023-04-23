@@ -24,16 +24,35 @@
             <img src="../../assets/images/megarocketlogo.png" alt="MegaRocket">
         </h1>
     </header>
-    <section>
-        <div>
-            <img src="" alt="back-button">
-            <h1>Register</h1>
+    <section class="register-class">
+        <div class="top-class">
+            <a href="../views/index.html">
+                <img src="../../assets/images/deshacer.png" alt="back-button">
+            </a>
+            <h2>Register</h2>
         </div>
-        <div>
+        <form action="">
             <div>
+                <input type="text" name="name" id="name-input" placeholder="Name...">
+                <input type="text" name="surname" id="surname-input" placeholder="Surname...">
+                <input type="text" name="id" id="id-input" placeholder="ID...">
+                <input type="text" name="birthdate" id="birthdate-input" placeholder="Birthday...">
+                <input type="text" name="phone" id="phone-input" placeholder="Phone number...">
+                <input type="text" name="address" id="address-input" placeholder="Address...">
+
             </div>
             <div>
+                <input type="text" name="city" id="city-input" placeholder="City...">
+                <input type="text" name="postal-code" id="postal-code-input" placeholder="Postal code">
+                <input type="text" name="email" id="email-input" placeholder="E-mail...">
+                <input type="text" name="password" id="password-input" placeholder="Password">
+                <input type="text" name="repeat-password" id="repeat-password-input"
+                placeholder="Repeat password">
+                <input type="text" name="comment" id="comment-input" placeholder="Say what you want...">
             </div>
+        </form>
+        <div class="button-container">
+            <button>Continue</button>
         </div>
     </section>
 </body>
