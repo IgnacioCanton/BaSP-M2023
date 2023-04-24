@@ -64,7 +64,12 @@ button {
   line-height: 44px;
   color: #2c8008;
 }
-
+.green-border {
+  border: 3px solid green;
+}
+.red-border {
+  border: 3px solid red;
+}
 @media (min-width: 1024px) {
   main,
   header,
