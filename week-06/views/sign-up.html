@@ -34,27 +34,59 @@
         </div>
         <form id="form-id">
             <div>
-                <input type="text" name="name" id="name-input" placeholder="Name...">
-                <input type="text" name="surname" id="surname-input" placeholder="Surname...">
-                <input type="text" name="id" id="id-input" placeholder="ID...">
-                <input type="date" name="birthdate" id="birthdate-input" placeholder="Birthday...">
-                <input type="text" name="phone" id="phone-input" placeholder="Phone number...">
-                <input type="text" name="address" id="address-input" placeholder="Address...">
+                <div class="only-height">
+                    <input type="text" name="name" id="name-input" placeholder="Name...">
+                    <p class="error-message" id="name-error-message"></p>
+                </div>
+                <div class="only-height">
+                    <input type="text" name="surname" id="surname-input" placeholder="Surname...">
+                    <p class="error-message" id="surname-error-message"></p>
+                </div>
+                <div class="only-height">
+                    <input type="text" name="id" id="id-input" placeholder="ID...">
+                    <p class="error-message" id="id-error-message"></p>
+                </div>
+                <div class="only-height">
+                    <input type="date" name="birthdate" id="birthdate-input" placeholder="Birthday...">
+                    <p class="error-message" id="birthdate-error-message"></p>
+                </div>
+                <div class="only-height">
+                    <input type="text" name="phone" id="phone-input" placeholder="Phone number...">
+                    <p class="error-message" id="phone-error-message"></p>
+                </div>
+                <div class="only-height">
+                    <input type="text" name="address" id="address-input" placeholder="Address...">
+                    <p class="error-message" id="address-error-message"></p>
+                </div>
 
             </div>
             <div>
-                <input type="text" name="city" id="city-input" placeholder="City...">
-                <input type="text" name="postal-code" id="postal-code-input" placeholder="Postal code">
-                <input type="text" name="email" id="email-input" placeholder="E-mail...">
-                <input type="text" name="password" id="password-input" placeholder="Password">
-                <input type="text" name="repeat-password" id="repeat-password-input"
-                placeholder="Repeat password">
-                <input type="text" name="comment" id="comment-input" placeholder="Say what you want...">
+                <div class="only-height">
+                    <input type="text" name="city" id="city-input" placeholder="City...">
+                    <p class="error-message" id="city-error-message"></p>
+                </div>
+                <div class="only-height">
+                    <input type="text" name="postal-code" id="postal-code-input" placeholder="Postal code">
+                    <p class="error-message" id="postalcode-error-message"></p>
+                </div>
+                <div class="only-height">
+                    <input type="text" name="email" id="email-input" placeholder="E-mail...">
+                    <p class="error-message" id="email-error-message"></p>
+                </div>
+                <div class="only-height">
+                    <input type="password" name="password" id="password-input" placeholder="Password">
+                    <p class="error-message" id="password-error-message"></p>
+                </div>
+                <div class="only-height">
+                    <input type="password" name="repeat-password" id="repeat-password-input"
+                    placeholder="Repeat password">
+                    <p class="error-message" id="repassword-error-message"></p>
+                </div>
+                <div class="button-container">
+                    <button type="button" id="register-button">Register</button>
+                </div>
             </div>
         </form>
-        <div class="button-container">
-            <button>Continue</button>
-        </div>
     </section>
 </body>
 </html>
