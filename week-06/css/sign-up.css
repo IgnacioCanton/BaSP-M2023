@@ -1,5 +1,6 @@
 body {
   background-color: #e3e6f2;
+  height: 100%;
 }
 form {
   width: 100%;
@@ -87,3 +88,9 @@ button {
     margin-left: 0px;
   }
 }
+@media (max-width: 1024px) {
+  form {
+    flex-direction: column
+  };
+}
+

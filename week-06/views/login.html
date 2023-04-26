@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script defer src="../js/login.js"></script>
 </head>
 <body>
     <header>
@@ -27,19 +28,25 @@
     </header>
     <section>
         <div class="container-login">
-            <img src="../../assets/images/deshacer.png" alt="back-button">
+            <div class="back-img">
+                <a href="../views/index.html"><img src="../../assets/images/deshacer.png" alt="back-button"></a>
+            </div>
             <h2>Log in</h2>
-            <div>
+            <div class="input-img-class" >
                 <img src="../../assets/images/mail.png" alt="email-img">
-                <input type="text" name="email" id="email-input" placeholder="E-mail...">
+                <input type="text" name="email" id="email-input-login" placeholder="E-mail...">
+                <p class="error-message" id="email-error-login"></p>
+            </div>
+            <div class="input-img-class">
+                <img src="../../assets/images/cerrar (1).png" alt="lock-img">
+                <input type="password" name="password" id="password-input-login" placeholder="Password">
+                <p class="error-message" id="password-error-login"></p>
             </div>
             <div>
-                <img src="" alt="lock-img">
-                <input type="text" name="password" id="password-input" placeholder="Password">
                 <h3>Have you forgotten your password?</h3>
             </div>
-            <div class="button-container">
-                <button>Continue</button>
+            <div>
+                <button type="button" id="login-button">Log in</button>
             </div>
         </div>
     </section>

@@ -12,9 +12,11 @@
         <link rel="stylesheet" type="text/css" href="../css/week-04/main.css">
         <link rel="stylesheet" type="text/css" href="../css/week-04/footer.css">
         <link rel="stylesheet" type="text/css" href="../css/week-04/sidebar.css">
+        <link rel="stylesheet" type="text/css" href="../css/border.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <script defer src="../../week-06/js/contact.js"></script>
     </head>
     <body>
         <header>
@@ -137,35 +139,48 @@
                 <h2>
                     You have questions, ask away and get your answers
                 </h2>
-                <form action="#" method="post">
+                <form>
                     <div class="form-class">
-                        <input type="text" name="name" id="name"  placeholder="Name" required>
-                        <input type="text" name="surname" id="surname"  placeholder="Surname" required>
-                        <input type="text" name="email" id="email"  placeholder="E-mail address" required>
-                        <input type="text" name="name" id="text"  placeholder="Text" required>
-                        <select id="motive" name="motive" required>
-                            <option value="" disabled selected>
-                                Select a motive
-                            </option>
-                            <option value="Complaint">
-                                Complaint
-                            </option>
-                            <option value="Comment">
-                                Comment
-                            </option>
-                            <option value="Suggestion">
-                                Suggestion
-                            </option>
-                        </select>
-                        <textarea name="message" id="message" placeholder="Your message..."></textarea>
-                    </div>
+                        <div class="only-height2">
+                            <input type="text" name="name" id="name-index" placeholder="Name...">
+                            <p class="error-message" id="name-error-index"></p>
+                        </div>
+                        <div class="only-height2">
+                            <input type="text"  id="surname-index"  placeholder="Surname" >
+                            <p class="error-message" id="surname-error-index"></p>
+                        </div>
+                        <div class="only-height2">
+                            <input type="text" name="email" id="email-index" placeholder="E-mail...">
+                            <p class="error-message" id="email-error-index"></p>
+                        </div>
+                        <div class="only-height2">
+                            <select id="motive">
+                                <option value="" disabled selected>
+                                    Select a motive
+                                </option>
+                                <option value="Complaint">
+                                    I want to know about memberships and costs
+                                </option>
+                                <option value="Comment">
+                                    I want to make an inquiry or suggestion
+                                </option>
+                                <option value="Suggestion">
+                                    I want to make a complaint
+                                </option>
+                            </select>
+                        </div>
+                        <div class="only-height3">
+                            <textarea name="message" id="textarea-input" placeholder="Your message..."></textarea>
+                            <p class="error-message" id="textarea-error-index"></p>
+                        </div>
+                        </div>
                     <div class="button-container">
                         <button type="reset">
                             <img src="../../assets/images/cerrar.png" alt="icono de cerrar">
                             Clear
                         </button>
                         <button type="submit">
-                            <img src="../../assets/images/correo-electronico-vacio.png" alt="Send button">                                Send
+                            <img src="../../assets/images/correo-electronico-vacio.png" id="send-button" alt="Send button" >                                Send
                         </button>
                     </div>
                 </form>
