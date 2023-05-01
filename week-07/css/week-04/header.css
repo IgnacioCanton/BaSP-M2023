@@ -1,0 +1,25 @@
+header {
+  height: 60px;
+  background-color: #35365c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 img {
+  width: 206px;
+  height: 42px;
+  padding-right: 10px;
+}
+.ham-icon-class {
+  width: 29.33px;
+  height: 20.1px;
+  padding-left: 10px;
+}
+
+@media (min-width: 600px) {
+  header {
+    height: 100px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}

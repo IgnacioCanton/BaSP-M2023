@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: #aace9b;
+}
+footer h3 {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+footer div img {
+  justify-content: space-between;
+  padding: 2%;
+  width: 30px;
+  height: 30px;
+}

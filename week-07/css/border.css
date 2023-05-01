@@ -1,0 +1,20 @@
+.green-border {
+    border: 1px solid green;
+}
+.red-border {
+    border: 1px solid red;
+}
+.error-message {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    color: red;
+}
+.only-height2 {
+    height: 60px;
+    width: 400px;
+}
+.only-height3 {
+    height: 100px;
+    width: 400px;
+}

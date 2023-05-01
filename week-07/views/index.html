@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MegaRocket</title>
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/week-04/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/week-04/global.css">
+        <link rel="stylesheet" type="text/css" href="../css/week-04/header.css">
+        <link rel="stylesheet" type="text/css" href="../css/week-04/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/week-04/footer.css">
+        <link rel="stylesheet" type="text/css" href="../css/week-04/sidebar.css">
+        <link rel="stylesheet" type="text/css" href="../css/border.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <script defer src="../../week-06/js/contact.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="ham-icon-class" src="../../assets/images/hamIcon.png" alt="hamburger-icon">
+            <h1>
+                <img src="../../assets/images/megarocketlogo.png" alt="MegaRocket">
+            </h1>
+        </header>
+        <section id="ham-menu-section" class="menu-section-class">
+            <h4>
+                Menu
+            </h4>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="../views/sign-up.html">Sign up</a>
+                </li>
+                <li>
+                    <a href="../views/login.html">Log in</a>
+                </li>
+                <li>
+                    <a href="">Info</a>
+                </li>
+                <li class="contact-us">
+                    <a href="">Contact us</a>
+                    <ul>
+                        <div>
+                            <img src="../../assets/images/mail.png" alt="mail-img">
+                            <li>
+                                information@un
+                                titled.tld
+                            </li>
+                        </div>
+                        <div>
+                            <img src="../../assets/images/phone.png" alt="phone-img">
+                            <li>
+                                (000) 000-0000
+                            </li>
+                        </div>
+                        <div>
+                            <img src="../../assets/images/address.png" alt="location-img">
+                            <li>
+                                1234 Somewhere road #8254Nashville, TN 00000-0000
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <main>
+            <section id="intro-text" class="intro-class">
+                <h2>
+                    Get fit, get strong
+                </h2>
+                <h3>
+                    Your ultimate gym experience starts here!
+                </h3>
+                <div>
+                    <p>
+                        We offer a wide range of fitness classes and state-of-the-art equipment to help you reach your fitness goals.
+                        Our expert trainers are here to guide and motivate you every step of the way.
+                        Join us and start your journey to a healthier, stronger you!
+                    </p>
+                    <img src="../../assets/images/weightlifter.png" alt="weightlifter-img">
+                </div>
+                </section>
+            <section id="options-section" class="options-class">
+                <div>
+                    <div class="inside-option">
+                        <img src="../../assets/images/calendar.png" alt="calendar-img">
+                        <h3>
+                            <a href="">Make an appointment</a>
+                        </h3>
+                    </div>
+                    <p>
+                        Choose the membership plan that fits your lifestyle and fitness goals.
+                        From basic to premium, we have options for every budget and level of commitment.
+                    </p>
+                </div>
+                <div>
+                    <div class="inside-option">
+                        <img src="../../assets/images/credential.png" alt="credential-img">
+                        <h3>
+                            <a href="#memberships-div">Our memberships</a>
+                        </h3>
+                    </div>
+                    <p>
+                        Choose the membership plan that fits your lifestyle and fitness goals.                         From basic to premium, we have options for every budget and level of commitment.
+                    </p>
+                </div>
+                <div>
+                    <div class="inside-option">
+                        <img src="../../assets/images/people.png" alt="people img">
+                        <h3>
+                            <a href="">Become a member</a>
+                        </h3>
+                    </div>
+                    <p>
+                        Join our fitness community and take advantage of all the perks of being a member.
+                        We offer a range of benefits to help you reach your fitness potential.
+                    </p>
+                </div>
+                <div>
+                    <div class="inside-option">
+                        <img src="../../assets/images/message.png" alt="text-img">
+                        <h3>
+                            <a href="">Suggestions</a>
+                        </h3>
+                    </div>
+                    <p>
+                        We're always looking for ways to improve our gym experience.
+                        Have a suggestion? We want to hear from you! Share your feedback with us
+                        and help us make our gym the best it can be for our members
+                    </p>
+                </div>
+            </section>
+            <section id="form-section" class="form-class">
+                <h2>
+                    You have questions, ask away and get your answers
+                </h2>
+                <form>
+                    <div class="form-class">
+                        <div class="only-height2">
+                            <input type="text" name="name" id="name-index" placeholder="Name...">
+                            <p class="error-message" id="name-error-index"></p>
+                        </div>
+                        <div class="only-height2">
+                            <input type="text"  id="surname-index"  placeholder="Surname" >
+                            <p class="error-message" id="surname-error-index"></p>
+                        </div>
+                        <div class="only-height2">
+                            <input type="text" name="email" id="email-index" placeholder="E-mail...">
+                            <p class="error-message" id="email-error-index"></p>
+                        </div>
+                        <div class="only-height2">
+                            <select id="motive">
+                                <option value="" disabled selected>
+                                    Select a motive
+                                </option>
+                                <option value="Complaint">
+                                    I want to know about memberships and costs
+                                </option>
+                                <option value="Comment">
+                                    I want to make an inquiry or suggestion
+                                </option>
+                                <option value="Suggestion">
+                                    I want to make a complaint
+                                </option>
+                            </select>
+                        </div>
+                        <div class="only-height3">
+                            <textarea name="message" id="textarea-input" placeholder="Your message..."></textarea>
+                            <p class="error-message" id="textarea-error-index"></p>
+                        </div>
+                        </div>
+                    <div class="button-container">
+                        <button type="reset">
+                            <img src="../../assets/images/cerrar.png" alt="icono de cerrar">
+                            Clear
+                        </button>
+                        <button type="submit">
+                            <img src="../../assets/images/correo-electronico-vacio.png" id="send-button" alt="Send button" >                                Send
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <article id="history-section" class="history-class">
+                <h2>
+                    Our history
+                </h2>
+                <p>
+                    Our journey began with a passion for fitness and a desire to create a community
+                    where individuals could come together to achieve their health and wellness goals.
+                    We wanted to build a gym that was more t....
+                </p>
+            </article>
+            <section id="activity-list-section" class="activities-class">
+                <div>
+                    <h3>
+                        Our activities
+                    </h3>
+                    <ol>
+                        <li>
+                            Crossfit
+                        </li>
+                        <li>
+                            Spinning
+                        </li>
+                        <li>
+                            Functional
+                        </li>
+                        <li>
+                            Boxing
+                        </li>
+                        <li>
+                            Weightlifting
+                        </li>
+                    </ol>
+                </div>
+                <div id="memberships-div">
+                    <h3>
+                        Black membership
+                    </h3>
+                    <ul>
+                        <li>
+                            Free access to BB class
+                        </li>
+                        <li>
+                            Free access to classes without making appointment
+                        </li>
+                        <li>
+                            ersonalized follow up with personal trainer
+                        </li>
+                        <li>
+                            Grid display
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>
+                        Classic membership
+                    </h3>
+                    <ul>
+                        <li>
+                            Free pass to weights room
+                        </li>
+                        <li>
+                            Monitored by a personal coach
+                        </li>
+                        <li>
+                            Displayed schedule
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>
+                        Only classes membership
+                    </h3>
+                    <ul>
+                        <li>
+                            Free pass to classes with prior appointment
+                        </li>
+                        <li>
+                            Display schedule
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3>
+                Copyright © 2023 MegaRocket SA. All rights reserved.
+            </h3>
+            <div>
+                <img src="../../assets/images/linkedin.png" alt="linkedin-logo">
+                <img src="../../assets/images/facebook.png" alt="facebook-logo">
+                <img src="../../assets/images/instagram.png" alt="instagram-logo">
+            </div>
+            </footer>
+    </body>
+</html>

@@ -1,0 +1,359 @@
+/* intro section */
+
+.intro-class {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #d9d9d9;
+  padding-top: 19px;
+  padding-bottom: 22px;
+}
+.intro-class h2 {
+  height: 30%;
+  padding-bottom: 3%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.intro-class h3 {
+  width: 91.6%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #000000;
+}
+.intro-class p {
+  white-space: pre-line;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.7076px;
+  line-height: 30px;
+}
+.intro-class img {
+  width: 64%;
+  height: 90%;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
+/* options section */
+
+.options-class {
+  display: flex;
+  flex-direction: column;
+  background-color: #aace9b;
+}
+.options-class div {
+  text-align: center;
+  height: 25%;
+  padding: 3.33333%;
+}
+.options-class h3 {
+  border: 1px solid black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    rgba(170, 206, 155, 0.41);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.options-class p {
+  display: none;
+}
+
+/* form section */
+
+.form-class {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #35365c;
+}
+.form-class h2 {
+  padding: 4% 6%;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.form-class input,
+select,
+textarea {
+  margin: 2% 10%;
+  text-align: left;
+  padding-top: 12px;
+  padding-left: 12px;
+}
+.form-class textarea {
+  padding-bottom: 12%;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 10%;
+}
+.button-container img {
+  width: 12px;
+  height: 12px;
+}
+.button-container button {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background: #51a884;
+  border: 3px solid #000000;
+  border-radius: 25px;
+}
+
+/* our history section */
+
+.history-class {
+  display: flex;
+  flex-direction: column;
+  background-color: #aace9b;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  color: #ffffff;
+}
+.history-class h2 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 59px;
+}
+.history-class p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 5% 5% 8% 5%;
+  text-align: justify;
+}
+
+/* activities section */
+
+.activities-class {
+  display: flex;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  text-align: center;
+  padding: 10% 15%;
+  color: #000000;
+  font-family: "Roboto";
+  font-style: normal;
+}
+.activities-class div {
+  padding-bottom: 15px;
+}
+.activities-class h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  padding-bottom: 25px;
+}
+.activities-class ol {
+  text-align: start;
+  list-style-type: decimal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+.activities-class ul {
+  text-align: start;
+  list-style-type: disc;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+@media (min-width: 600px) {
+  /* form section */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+  }
+  .form-class {
+    align-items: center;
+  }
+  form input,
+  select,
+  textarea {
+    width: 100%;
+  }
+  /* intro section */
+
+  .intro-class {
+    text-align: left;
+  }
+  .intro-class h2,
+  h3 {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .intro-class div {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding: 13px 23px;
+  }
+  .intro-class p {
+    white-space: pre-line;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 70%;
+    height: 70%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.7076px;
+    line-height: 30px;
+  }
+  .intro-class img {
+    width: 30%;
+    height: 30%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  /* Options section */
+
+  .options-class {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .options-class div {
+    width: 40%;
+    height: 40%;
+    padding: 0;
+    margin: 5%;
+  }
+  .inside-option {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .inside-option img {
+    width: 90px;
+    height: 90px;
+  }
+  .inside-option h3 {
+    width: 264px;
+    height: 64px; /* no pude hacer que midan todos esto */
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .options-class p {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 200%;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* intro section */
+  .intro-class p {
+    word-wrap: break-word;
+  }
+  /* options section */
+  .options-class p {
+    line-height: 100%;
+  }
+  /* our history section */
+  .history-class h2 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 7%;
+  }
+  .history-class p {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+    padding-left: 0;
+    margin-left: 12%;
+    text-align: justify;
+  }
+  /* activities section */
+  .activities-class {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0;
+    font-family: "Roboto";
+    font-style: normal;
+  }
+  .activities-class div {
+    padding: 0;
+    width: 40%;
+    height: 40%;
+    margin: 5%;
+  }
+  .activities-class h3 {
+    width: auto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .activities-class ol {
+    text-align: center;
+    width: fit-content;
+    margin-left: 10%;
+    margin-top: 25px;
+  }
+  .activities-class ul {
+    text-align: left;
+    list-style-type: disc;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 25px;
+    margin-left: 10%;
+  }
+}

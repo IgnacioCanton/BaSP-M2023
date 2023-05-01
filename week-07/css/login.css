@@ -1,0 +1,67 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img {
+    width: 30px;
+    height: 30px;
+}
+.container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: azure;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+.container-login div {
+    display: flex;
+    flex-direction: row;
+}
+.back-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 15px;
+}
+.container-login h2 {
+    font-size: 25px;
+}
+.container-login input {
+    height: 30px;
+    margin-left: 15px;
+}
+.container-login h3 {
+    width: 192px;
+    font-size: 18px;
+    color: grey;
+    margin: 15px;
+}
+.input-img-class {
+    margin: 15px;
+    height: 40px;
+}
+.green-border {
+    border: 1px solid green;
+}
+.red-border {
+    border: 1px solid red;
+}
+.error-message {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    color: red;
+}
+.only-height {
+    height: 60px;
+}
+

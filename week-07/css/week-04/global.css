@@ -1,0 +1,19 @@
+/* global */
+
+body {
+  width: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+}
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  main,
+  header,
+  footer {
+    margin-left: 300px;
+  }
+}
