@@ -73,19 +73,15 @@ loginButton.addEventListener("click", function () {
       emailUrl +
       "&password=" +
       passUrl;
-    alert(url);
     fetch(url)
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error("There is something wrong.");
-        }
+      .then(function(response) {
         return response.json();
       })
-      .then(function (data) {
-        alert("The request was successful\n" + data.msg)
+      .then(function(data) {
+        alert(data.msg);
       })
-      .catch(function (error) {
-        alert(error.message);
+      .catch(function(error) {
+        alert('Error occurred: ' + error.message);
       });
   } else {
     alert("E-mail and password do not belong to each other.");

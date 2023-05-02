@@ -22,7 +22,6 @@ function validateDate(num, min, max, accepted) {
   for (i = 0; i < num.length; i++) {
     if (accepted.indexOf(num.charAt(i)) == -1) {
       isTrue = false;
-      alert("entro");
       break;
     }
   }
@@ -64,7 +63,7 @@ function validateEmail(email) {
 }
 //main
 var long = 3;
-var alphabet = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑXWOPQRSTUVWXYZ ";
+var alphabet = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑXWOPQRSTUVWXYZ";
 var nameInput = document.getElementById("name-input");
 var nameError = document.getElementById("name-error-message");
 nameInput.addEventListener("blur", function () {
@@ -75,7 +74,7 @@ nameInput.addEventListener("blur", function () {
     nameInput.classList.add("green-border");
   } else {
     nameInput.classList.remove("green-border");
-    nameError.textContent = "Only letters (min 3)";
+    nameError.textContent = "Only letters (min 3, blanks are not allowed)";
     nameInput.classList.add("red-border");
   }
 });
@@ -127,7 +126,7 @@ var phoneInput = document.getElementById("phone-input");
 var phoneError = document.getElementById("phone-error-message");
 phoneInput.addEventListener("blur", function () {
   result = validateName(phoneInput, long3, numbers);
-  if (result == true) {
+  if (result == true && phoneInput.value.length == 10) {
     phoneInput.classList.remove("red-border");
     phoneInput.textContent = "";
     phoneInput.classList.add("green-border");
@@ -139,7 +138,7 @@ phoneInput.addEventListener("blur", function () {
 });
 phoneInput.addEventListener("focus", function () {
   removeBorder(phoneInput);
-  phoneInput.textContent = "";
+  phoneError.textContent = "";
 });
 const alphanumeric =
   "0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑXWOPQRSTUVWXYZ ";
@@ -314,25 +313,78 @@ registerButton.addEventListener("click", function () {
     passwordInput.className.split(" ").indexOf(myClass) !== -1 &&
     rePasswordInput.className.split(" ").indexOf(myClass) !== -1
   ) {
-    resultString =
-      "Name: " +
-      nameInput.value +
-      "\n Surname: " +
-      surnameInput.value +
-      "\n ID: " +
-      idInput.value +
-      "\n City: " +
-      cityInput.value +
-      "\n Postal code: " +
-      postalCodeInput.value +
-      "\n Birthdate: " +
-      dateInput.value +
-      "\n Address: " +
-      addressInput.value +
-      "\n Email: " +
-      emailInput.value;
-    alert(resultString);
+    var dateValue = dateInput.value;
+    var year = dateValue.substring(0, 4);
+    var month = dateValue.substring(5, 7);
+    var day = dateValue.substring(8, 10);
+    var dateUrl = month + "/" + day + "/" + year;
+    var nameUrl=nameInput.value;
+    var surnameUrl=surnameInput.value;
+    var phoneUrl=phoneInput.value;
+    var idUrl=idInput.value;
+    var cityUrl=cityInput.value;
+    var postalUrl=postalCodeInput.value;
+    var addressUrl=addressInput.value;
+    var emailUrl2=emailInput.value;
+    var passUrl=passwordInput.value;
+    var url = 'https://api-rest-server.vercel.app/signup?name=' + nameUrl + '&lastName=' + surnameUrl + '&dni=' +
+    idUrl + '&dob=' + dateUrl + '&phone=' + phoneUrl + '&address=' + addressUrl + '&city=' + cityUrl + '&zip=' + postalUrl +
+    '&email=' + emailUrl2 + '&password=' + passUrl;
+    alert (url)
+    fetch(url)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        console.log(data);
+        var dataObj = data.data;
+        var strFinal = "";
+        for (var key in dataObj) {
+          if (dataObj.hasOwnProperty(key)) {
+            strFinal += key + ': ' + dataObj[key] + '\n';
+          }
+        }
+        alert (strFinal)
+        localStorage.setItem('address', dataObj.address);
+        localStorage.setItem('city', dataObj.city);
+        localStorage.setItem('dni', dataObj.dni);
+        localStorage.setItem('dob', dataObj.dob);
+        localStorage.setItem('email', dataObj.email);
+        localStorage.setItem('lastName', dataObj.lastName);
+        localStorage.setItem('name', dataObj.name);
+        localStorage.setItem('password', dataObj.password);
+        localStorage.setItem('phone', dataObj.phone);
+        localStorage.setItem('zip', dataObj.zip);
+      })
+      .catch(function(error) {
+        console.log('Error occurred: ' + error.message);
+      });
   } else {
     alert("There is some mistake. Please fill all the fields");
   }
 });
+var addressValue = localStorage.getItem('address');
+var cityValue = localStorage.getItem('city');
+var dniValue = localStorage.getItem('dni');
+var dobValue = localStorage.getItem('dob');
+var yyyy = dobValue.substring(6, 10);
+var mm = dobValue.substring(0, 2);
+var dd = dobValue.substring(3, 5);
+dobValue = yyyy + "-" + mm + "-" + dd;
+var emailValue = localStorage.getItem('email');
+var lastNameValue = localStorage.getItem('lastName');
+var nameValue = localStorage.getItem('name');
+var passwordValue = localStorage.getItem('password');
+var phoneValue = localStorage.getItem('phone');
+var zipValue = localStorage.getItem('zip');
+
+document.getElementById('address-input').value = addressValue;
+document.getElementById('city-input').value = cityValue;
+document.getElementById('id-input').value = dniValue;
+document.getElementById('birthdate-input').value = dobValue;
+document.getElementById('email-input').value = emailValue;
+document.getElementById('surname-input').value = lastNameValue;
+document.getElementById('name-input').value = nameValue;
+document.getElementById('password-input').value = passwordValue;
+document.getElementById('phone-input').value = phoneValue;
+document.getElementById('postal-code-input').value = zipValue;
