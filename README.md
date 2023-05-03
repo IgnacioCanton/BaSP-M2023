@@ -10,6 +10,8 @@ In the fourth week of our web development course, we styled our HTML using flexb
 This week, we covered the basic principles of programming using JavaScript. We learned about variables, strings, for loops, if statements, and functions. Throughout the week, we put these concepts into practice with a series of exercises and programming challenges. By the end of the week, we had a solid understanding of these fundamental concepts and were able to apply them to real-world problems.
 ## Week-06:
 This week, we focused on validating the forms in our web project using JavaScript. We worked on implementing various validation techniques to ensure that the user's input is correct and complete. We also explored how to display helpful error messages when the user makes an error or omits important information. By the end of the week, we had successfully implemented form validation on all the forms in our web project, which will help to improve the user experience and prevent errors or incomplete submissions.
+## Week-07:
+This week we worked with "request" using "fetch" and handled the responses using promises. "Fetch" is a built-in JavaScript function that returns a promise when making HTTP requests. Using promises allowed us to handle the response asynchronously, making our code more efficient and resilient. These concepts are important for web developers to master for building responsive and efficient web applications.
 ## Support
 For any inconvenience or doubt just ask :
 E-mail: juanignaciocanton1@gmai.com

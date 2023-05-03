@@ -330,7 +330,6 @@ registerButton.addEventListener("click", function () {
     var url = 'https://api-rest-server.vercel.app/signup?name=' + nameUrl + '&lastName=' + surnameUrl + '&dni=' +
     idUrl + '&dob=' + dateUrl + '&phone=' + phoneUrl + '&address=' + addressUrl + '&city=' + cityUrl + '&zip=' + postalUrl +
     '&email=' + emailUrl2 + '&password=' + passUrl;
-    alert (url)
     fetch(url)
       .then(function(response) {
         return response.json();
